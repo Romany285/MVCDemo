@@ -46,8 +46,8 @@ namespace MVCDemo
             app.MapControllerRoute
                 (
                     name : "default",
-                    pattern : "/{Controller = Home}/{Action = Index}",
-                    defaults : new { Controller = "home" , Action = "AboutUs" }
+                    pattern : "/{Controller=Home}/{Action=Privacy}",
+                    defaults : new { Controller = "Home" , Action = "Privacy" }
                 );
 
             //app.MapGet("/", () => "Hello World!");
