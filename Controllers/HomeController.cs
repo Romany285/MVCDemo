@@ -4,13 +4,21 @@ namespace MVCDemo.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public IActionResult Index()
         {
-            return "this is index action";
+            return  View();
         }
-        public string AboutUs()
+        public IActionResult AboutUs()
         {
-            return "this is About Us action";
+            return View();
+        }
+        public IActionResult ContactUs()
+        {
+            return View();
+        }
+        public IActionResult Privacy()
+        {
+            return View();
         }
     }
 }

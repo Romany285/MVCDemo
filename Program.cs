@@ -5,9 +5,10 @@ namespace MVCDemo
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            builder.Services.AddControllers();
+            builder.Services.AddControllersWithViews();
             var app = builder.Build();
             app.UseRouting();
+            app.UseStaticFiles();
             #region MyRegion
             //app.UseEndpoints(endpoints =>
             //{
@@ -46,7 +47,7 @@ namespace MVCDemo
                 (
                     name : "default",
                     pattern : "/{Controller = Home}/{Action = Index}",
-                    defaults : new { Controller = "Home" , Action = "AboutUs" }
+                    defaults : new { Controller = "home" , Action = "AboutUs" }
                 );
 
             //app.MapGet("/", () => "Hello World!");
