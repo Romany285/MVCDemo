@@ -49,7 +49,7 @@ namespace MVCDemo
                     defaults : new { Controller = "Home" , Action = "AboutUs" }
                 );
 
-            //app.MapGet("/", () => "Hello World!");
+            ////app.MapGet("/", () => "Hello World!");
             //app.Run(async (HttpContent) => { await HttpContent.Response.WriteAsync("hello"); });
             app.Run();
         }
